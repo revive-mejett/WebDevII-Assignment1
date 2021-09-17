@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- add what is needed -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/script.js"></script>
+    
+    <title>
+        Checkered Table Generator
+    </title>
+</head>
+
+<body>
+    <header>
+    <!-- hard code what is needed -->
+        <h1>
+            Assignment 1: Table Generator
+        </h1>
+    </header>
+    <main>
+
+        <div class="flex-container">
+            <section id=formHere class="flex-item1">
+                <h2>
+                    Select how many rows, columns as well as the colours of the table.
+                </h2>
+                <form>
+                    <!-- hard code the form widgets -->
+
+                    <fieldset>
+                        <label for="rowField">Row Count:</label><br>
+                        <input type="number" name="rowField" min="1" max="100" id="rowField"><br>
+
+                        <label for="columnField">Column Count:</label><br>
+                        <input type="number" name="columnField" min="1" max="100" id="columnField"><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="oddColourField">Odd box colour</label><br>
+                        <input type="color" name="oddColourField" value="#000000" id="oddColourField"><br>
+
+                        <label for="evenColourField">Even box colour</label><br>
+                        <input type="color" name="evenColourField" value="#FFFFFF" id="evenColourField"><br>
+                    </fieldset>
+
+                    
+                    
+                </form>
+                <button id="createTableButton">
+                    Create Table
+                </button>
+            </section>
+            <section id=tableHere class="flex-item2">
+                <h2>
+                    Table here!
+                </h2>
+            </section>
+        </div> 
+    </main>
+    <footer>
+        <!-- hard code the footer -->
+        <h2>
+            Brought to you by: Kyle Veloso<br>
+            For 420-320-DW JavaScript Assignment 1 Fall2021<br>
+            Due date: September 20, 2021
+
+        </h2>
+    </footer>
+</body>
+
+</html>
