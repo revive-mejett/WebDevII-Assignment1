@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- add what is needed -->
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/style.css">
     <script defer src="scripts/script.js"></script>
@@ -14,7 +13,6 @@
 
 <body>
     <header>
-    <!-- hard code what is needed -->
         <h1>
             Assignment 1: Table Generator
         </h1>
@@ -24,29 +22,44 @@
         <div class="flex-container">
             <section id=formHere class="flex-item1">
                 <h2>
-                    Select how many rows, columns as well as the colours of the table.
+                    Click on the buttons to change the table.
                 </h2>
                 <form>
-                    <!-- hard code the form widgets -->
-
                     <fieldset>
-                        <label for="rowField">Row Count:</label><br>
-                        <input type="number" name="rowField" min="1" max="100" id="rowField"><br>
+                        <legend>
+                            Row/Column dimensions (1-100 Max)
+                        </legend>
+                        <label for="rowField">Row Count:</label>
+                        <input type="number" name="rowField" min="1" max="100" id="rowField">
 
-                        <label for="columnField">Column Count:</label><br>
-                        <input type="number" name="columnField" min="1" max="100" id="columnField"><br>
+                        <label for="columnField">Column Count:</label>
+                        <input type="number" name="columnField" min="1" max="100" id="columnField">
                     </fieldset>
-
                     <fieldset>
+                        <legend>
+                            Table Colours
+                        </legend>
                         <label for="oddColourField">Odd box colour</label><br>
                         <input type="color" name="oddColourField" value="#000000" id="oddColourField"><br>
 
                         <label for="evenColourField">Even box colour</label><br>
                         <input type="color" name="evenColourField" value="#FFFFFF" id="evenColourField"><br>
                     </fieldset>
+                    
+                    <fieldset>
+                        <legend>
+                            pattern
+                        </legend>
+                        <input type="radio" name="pattern" value="Checkerboard" id="checkerboard" checked>
+                        <label for="checkerboard">Checkerboard</label><br>
 
-                    
-                    
+                        <input type="radio" name="pattern" value="Rows Alternate" id="rowsAlternate">
+                        <label for="rowsAlternate">Rows Alternate</label><br>
+                        
+                        <input type="radio" name="pattern" value="Columns Alternate" id="columnsAlternate">
+                        <label for="columnsAlternate">Columns Alternate</label>
+
+                    </fieldset>
                 </form>
                 <button id="createTableButton">
                     Create Table
@@ -60,7 +73,6 @@
         </div> 
     </main>
     <footer>
-        <!-- hard code the footer -->
         <h2>
             Brought to you by: Kyle Veloso<br>
             For 420-320-DW JavaScript Assignment 1 Fall2021<br>
